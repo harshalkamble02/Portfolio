@@ -1,101 +1,355 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harshal Kamble | Portfolio</title>
-  <link rel="stylesheet" href="css/style.css">
-  <script defer src="js/script.js"></script>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Harshal | Data Analyst Portfolio</title>
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
+
 <body>
-  <!-- ===== HEADER ===== -->
+
+  <!-- HEADER -->
   <header class="header">
-    <div class="container">
-      <h1 class="logo">Harshal Kamble</h1>
-      <nav class="navbar">
-        <a href="#about">About</a>
-        <a href="#education">Education</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+    <div class="container nav-wrap">
+      <a class="logo" href="#home">Harshal<span>.</span></a>
+
+      <button class="menu-btn" id="menuBtn">☰</button>
+
+      <nav class="nav" id="navMenu">
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#work" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
       </nav>
     </div>
   </header>
 
-  <!-- ===== HERO SECTION ===== -->
-  <section class="hero">
-    <div class="hero-content">
-      <img src="images/profile.jpg" alt="Profile Photo" class="profile-pic">
-      <h2>Hello, I'm <span>Harshal Kamble</span></h2>
-      <p>A passionate Developer who loves building creative web projects.</p>
-      <button class="btn" onclick="scrollToSection('contact')">Get in Touch</button>
-    </div>
-  </section>
+  <!-- HERO -->
+  <section id="home" class="hero">
+    <div class="container hero-grid">
 
-  <!-- ===== ABOUT SECTION ===== -->
-  <section id="about" class="about section">
-    <h2 class="section-title">About Me</h2>
-    <p>
-      I'm a passionate and detail-oriented developer with a good understanding of Python and web development. 
-      I enjoy building apps that are simple, useful, and work well. I'm always looking to learn new things and improve my skills. 
-      I like being part of projects that solve real problems. I'm a quick learner, enjoy solving challenges, and try to stay up to date with new trends in tech. 
-    </p>
-  </section>
+      <div class="hero-text">
+        <p class="tag">
+          Aspiring Data Analyst | Excel | SQL | Power BI | Python
+        </p>
 
-  <!-- ===== EDUCATION SECTION ===== -->
-  <section id="education" class="education section">
-    <h2 class="section-title">Education</h2>
-    <div class="edu-card">
-      <h3>Bachelor of Computer Science</h3>
-      <p>Hi Tech College Of Management & Computer Science, 2022 - 2025</p>
-      <p>Specialization: Computer Science</p>
-      <p>CGPA: 6.85</p>
-    </div>
-  </section>
-     <!-- ===== COURSES SECTION ===== -->
-<section id="courses" class="courses section">
-  <h2 class="section-title">Courses</h2>
+        <h1>
+          Hi, I'm <span class="accent">Harshal</span> <br />
+          Data Analyst Fresher
+        </h1>
 
-  <div class="course-card">
-    <h3>Data Analytics Course</h3>
-    <p>PW Skills (Ongoing)</p>
-    <p>Learning Excel, MySQL, Power BI, Python for Data Analysis, Dashboard Building & Visualization.</p>
-  </div>
+        <p class="subtext">
+          Passionate about data analysis, dashboards, and solving
+          real-world business problems using data-driven insights.
+        </p>
 
-</section>
-
-  <!-- ===== PROJECTS SECTION ===== -->
-  <section id="projects" class="projects section">
-    <h2 class="section-title">My Projects</h2>
-    <div class="project-grid">
-      <div class="project-card">
-        <h3>Virtual assistant – Intelligent AI </h3>
-        <p>This project is an AI-based virtual assistant that can interact with users through voice or text. 
-          The assistant can understand commands and perform simple tasks such as answering questions, opening applications, searching the web, telling the time, or responding to basic conversations.</p>
+        <div class="btn-row">
+          <a class="btn primary" href="#contact">Contact Me</a>
+          <a class="btn outline" href="#work">View Projects</a>
+          <a class="btn outline"
+             href="https://github.com/harshalkamble02"
+             target="_blank">
+             GitHub
+          </a>
+        </div>
       </div>
-      <div class="project-card">
-        <h3>Effective Salary Division – Web </h3>
-        <p>This project is a web-based application that helps users manage and divide their monthly salary into different categories such as savings, bills, and other expenses. The app takes the user’s
-           total salary as input and automatically calculates and displays how much should go into each category based on set percentages or user preferences.</p>
+
+      <div class="hero-image">
+        <img src="./images/hero.jpg" alt="Harshal Portfolio Image" />
       </div>
-      <!-- <div class="project-card">
-        <h3>Portfolio Website</h3>
-        <p>This personal portfolio showcasing my skills, education, and projects.</p>
-      </div> -->
+
     </div>
   </section>
 
-  <!-- ===== CONTACT SECTION ===== -->
-  <section id="contact" class="contact section">
-    <h2 class="section-title">Contact Me</h2>
-    <form class="contact-form" onsubmit="sendMessage(event)">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" rows="5" placeholder="Your Message" required></textarea>
-      <button type="submit" class="btn">Send Message</button>
-    </form>
-    <p class="footer">© 2025 Harshal Kamble | All Rights Reserved</p>
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="title">About Me</h2>
 
+      <p class="desc">
+        Hi, I'm <span class="accent">Harshal</span>, an aspiring
+        <b>Data Analyst</b> passionate about working with data to
+        discover meaningful insights. I am improving my skills in
+        <b>Excel, SQL, Power BI, Python</b>, and data visualization.
+        I enjoy building dashboards, reports, and solving
+        real-world problems using data.
+      </p>
 
+      <!-- TABS -->
+      <div class="tabs">
+        <button class="tab-btn active" data-tab="skills">Skills</button>
+        <button class="tab-btn" data-tab="projects">Projects</button>
+        <button class="tab-btn" data-tab="education">Education</button>
+        <button class="tab-btn" data-tab="courses">Courses</button>
+      </div>
+
+      <!-- SKILLS -->
+      <div class="tab-content active" id="skills">
+
+        <div class="list-card">
+          <h3>Programming</h3>
+          <p>Python, SQL, Java</p>
+        </div>
+
+        <div class="list-card">
+          <h3>Data Analytics</h3>
+          <p>
+            Data Cleaning, Data Visualization,
+            Dashboarding, KPI Analysis, Reporting
+          </p>
+        </div>
+
+        <div class="list-card">
+          <h3>Excel</h3>
+          <p>
+            Pivot Tables, VLOOKUP/XLOOKUP,
+            Charts, Conditional Formatting
+          </p>
+        </div>
+
+        <div class="list-card">
+          <h3>SQL</h3>
+          <p>
+            SELECT, WHERE, JOIN, GROUP BY,
+            ORDER BY, Aggregation
+          </p>
+        </div>
+
+        <div class="list-card">
+          <h3>Power BI</h3>
+          <p>
+            Dashboards, KPI Cards,
+            DAX Basics, Slicers,
+            Interactive Reports
+          </p>
+        </div>
+
+        <div class="list-card">
+          <h3>Tools</h3>
+          <p>VS Code, GitHub, MS Excel, Power BI Desktop</p>
+        </div>
+
+      </div>
+
+      <!-- PROJECTS TAB -->
+      <div class="tab-content" id="projects">
+
+        <div class="list-card">
+          <h3>Sales Data Analysis Dashboard</h3>
+          <p>
+            Created interactive Power BI dashboards
+            with KPIs, charts, filters, and business insights
+            using sales datasets.
+          </p>
+        </div>
+
+        <div class="list-card">
+          <h3>Excel Report System</h3>
+          <p>
+            Built reports using Pivot Tables,
+            formulas, charts, and data summaries.
+          </p>
+        </div>
+
+        <div class="list-card">
+          <h3>Virtual Assistant (Python)</h3>
+          <p>
+            Developed a Python-based assistant
+            with automation and command handling.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- EDUCATION -->
+      <div class="tab-content" id="education">
+
+        <div class="list-card">
+          <h3>Master of Computer Science (MCS) – Pursuing</h3>
+          <p>
+            Hi-Tech College of Management &
+            Computer Science <br>
+            2025 – Present
+          </p>
+        </div>
+
+        <div class="list-card">
+          <h3>Bachelor of Computer Science (BCS)</h3>
+          <p>
+            Hi-Tech College of Management &
+            Computer Science <br>
+            2022 – 2025 <br>
+            CGPA: 6.85
+          </p>
+        </div>
+
+      </div>
+
+      <!-- COURSES -->
+      <div class="tab-content" id="courses">
+
+        <div class="list-card">
+          <h3>Data Analytics Course – PW Skills</h3>
+          <p>
+            Learning Excel, SQL, Power BI,
+            Python for Data Analysis,
+            Dashboard Building & Visualization.
+          </p>
+        </div>
+
+        <div class="list-card">
+          <h3>Power BI Practice</h3>
+          <p>
+            Built dashboards using charts,
+            slicers, KPI cards and DAX basics.
+          </p>
+        </div>
+
+        <div class="list-card">
+          <h3>SQL Practice</h3>
+          <p>
+            Practicing Queries, Joins,
+            Filtering, Grouping,
+            and Database fundamentals.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
   </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="work" class="section">
+    <div class="container">
+
+      <h2 class="title">My Projects</h2>
+
+      <div class="work-grid">
+
+        <div class="work-card">
+          <div class="icon">📊</div>
+
+          <h3>Sales Dashboard</h3>
+
+          <p>
+            Interactive Power BI dashboard
+            with KPIs, charts, filters
+            and business insights.
+          </p>
+
+          <div class="card-actions">
+            <a class="btn small outline"
+               href="#"
+               target="_blank">
+               Live
+            </a>
+
+            <a class="btn small primary"
+               href="https://github.com/harshalkamble02"
+               target="_blank">
+               GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="icon">📑</div>
+
+          <h3>Excel Report System</h3>
+
+          <p>
+            Monthly reporting using
+            Pivot Tables, formulas,
+            charts and summaries.
+          </p>
+
+          <div class="card-actions">
+            <a class="btn small outline"
+               href="#"
+               target="_blank">
+               View
+            </a>
+
+            <a class="btn small primary"
+               href="https://github.com/harshalkamble02"
+               target="_blank">
+               GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <div class="icon">🤖</div>
+
+          <h3>Virtual Assistant (Python)</h3>
+
+          <p>
+            Python-based virtual assistant
+            with voice commands and
+            automation features.
+          </p>
+
+          <div class="card-actions">
+            <a class="btn small outline"
+               href="#"
+               target="_blank">
+               Demo
+            </a>
+
+            <a class="btn small primary"
+               href="https://github.com/harshalkamble02"
+               target="_blank">
+               GitHub
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section">
+    <div class="container">
+
+      <h2 class="title">Contact Me</h2>
+
+      <form class="contact-form" id="contactForm">
+        <input type="text" placeholder="Your Name" required />
+        <input type="email" placeholder="Your Email" required />
+        <textarea placeholder="Your Message" required></textarea>
+
+        <button class="btn primary" type="submit">
+          Send Message
+        </button>
+      </form>
+
+      <div class="contact-links">
+
+        <a class="btn outline"
+           href="mailto:harshalkamble8530@gmail.com">
+           Email Me
+        </a>
+
+        <a class="btn outline"
+           href="https://www.linkedin.com/"
+           target="_blank">
+           LinkedIn
+        </a>
+
+      </div>
+
+      <p class="footer">
+        © 2026 Harshal | Data Analyst Portfolio
+      </p>
+
+    </div>
+  </section>
+
+  <script src="js/script.js"></script>
+
 </body>
 </html>
